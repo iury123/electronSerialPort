@@ -40,8 +40,8 @@ app.on('activate', () => {
 
 
 // The open event is always emitted
-port.on('open', (e) => {
-    console.log('OPEN EVENT CALLED', e);
+port.on('open', () => {
+    console.log('OPEN EVENT CALLED');
 });
 
 // Switches the port into "flowing mode"
